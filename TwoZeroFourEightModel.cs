@@ -67,21 +67,31 @@ namespace twozerofoureight
                         if (i == 0)
                         {
                             if (j == 0) //top_left
-                                if (board[i, j] == board[i, j + 1] || board[i, j] == board[i + 1, j]) return false;
-                            if (j == 3) //top_right
-                                if (board[i, j] == board[i, j - 1] || board[i, j] == board[i + 1, j]) return false;
+                            { if (board[i, j] == board[i, j + 1] || board[i, j] == board[i + 1, j]) return false; }
+                            else if (j == 3) //top_right
+                            { if (board[i, j] == board[i, j - 1] || board[i, j] == board[i + 1, j]) return false; }
+                            else{
+                              if (board[i, j] == board[i, j - 1] || board[i, j] == board[i, j + 1] || board[i, j] == board[i + 1, j]) return false;
+                            }
                         }
                         else if (i == 3)
                         {
                             if (j == 0) //bottom_left
-                                if (board[i, j] == board[i, j + 1] || board[i, j] == board[i - 1, j]) return false;
-                            if (j == 3) //bottom_right
-                                if (board[i, j] == board[i, j - 1] || board[i, j] == board[i - 1, j]) return false;
+                            { if (board[i, j] == board[i, j + 1] || board[i, j] == board[i - 1, j]) return false; }
+                            else if (j == 3) //bottom_right
+                            { if (board[i, j] == board[i, j - 1] || board[i, j] == board[i - 1, j]) return false; }
+                            else {
+                                if (board[i, j] == board[i, j - 1] || board[i, j] == board[i, j + 1] || board[i, j] == board[i - 1, j]) return false;
+                            }
                         }
                         else
                         { 
                             if(j > 0 && j < 3) //position_that_can_move_4_direction
                                 if (board[i, j] == board[i, j - 1] || board[i, j] == board[i, j + 1] || board[i, j] == board[i + 1, j] || board[i, j] == board[i - 1, j]) return false;
+                            if (j == 0)
+                                if (board[i, j] == board[i, j + 1] || board[i, j] == board[i + 1, j] || board[i, j] == board[i - 1, j]) return false;
+                            if (j == 3)
+                                if (board[i, j] == board[i, j - 1] || board[i, j] == board[i + 1, j] || board[i, j] == board[i - 1, j]) return false;
                         }
                     }
                 }
