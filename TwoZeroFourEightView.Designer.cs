@@ -246,6 +246,7 @@
             // 
             // btnLeft
             // 
+            this.btnLeft.CausesValidation = false;
             this.btnLeft.Location = new System.Drawing.Point(217, 414);
             this.btnLeft.Margin = new System.Windows.Forms.Padding(4);
             this.btnLeft.Name = "btnLeft";
@@ -255,9 +256,11 @@
             this.btnLeft.UseVisualStyleBackColor = true;
             this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             this.btnLeft.KeyDown += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
+            this.btnLeft.KeyUp += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
             // 
             // btnUp
             // 
+            this.btnUp.CausesValidation = false;
             this.btnUp.Location = new System.Drawing.Point(296, 378);
             this.btnUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnUp.Name = "btnUp";
@@ -267,9 +270,11 @@
             this.btnUp.UseVisualStyleBackColor = true;
             this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             this.btnUp.KeyDown += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
+            this.btnUp.KeyUp += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
             // 
             // btnRight
             // 
+            this.btnRight.CausesValidation = false;
             this.btnRight.Location = new System.Drawing.Point(375, 414);
             this.btnRight.Margin = new System.Windows.Forms.Padding(4);
             this.btnRight.Name = "btnRight";
@@ -279,9 +284,11 @@
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             this.btnRight.KeyDown += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
+            this.btnRight.KeyUp += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
             // 
             // btnDown
             // 
+            this.btnDown.CausesValidation = false;
             this.btnDown.Location = new System.Drawing.Point(296, 459);
             this.btnDown.Margin = new System.Windows.Forms.Padding(4);
             this.btnDown.Name = "btnDown";
@@ -291,6 +298,7 @@
             this.btnDown.UseVisualStyleBackColor = true;
             this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             this.btnDown.KeyDown += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
+            this.btnDown.KeyUp += new System.Windows.Forms.KeyEventHandler(this._KeyDown);
             // 
             // Score_tap
             // 

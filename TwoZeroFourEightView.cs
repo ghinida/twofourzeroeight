@@ -124,19 +124,29 @@ namespace twozerofoureight
                 case Keys.A:
                     controller.ActionPerformed(TwoZeroFourEightController.LEFT);
                     break;
+                case Keys.Left:
+                    controller.ActionPerformed(TwoZeroFourEightController.LEFT);
+                    break;
                 case Keys.D:
+                    controller.ActionPerformed(TwoZeroFourEightController.RIGHT);
+                    break;
+                case Keys.Right:
                     controller.ActionPerformed(TwoZeroFourEightController.RIGHT);
                     break;
                 case Keys.W:
                     controller.ActionPerformed(TwoZeroFourEightController.UP);
                     break;
+                case Keys.Up:
+                    controller.ActionPerformed(TwoZeroFourEightController.UP);
+                    break;
                 case Keys.S:
+                    controller.ActionPerformed(TwoZeroFourEightController.DOWN);
+                    break;
+                case Keys.Down:
                     controller.ActionPerformed(TwoZeroFourEightController.DOWN);
                     break;
             }
                 
         }
-
-        
     }
 }
